@@ -27,20 +27,41 @@ Required Python libraries:
 - matplotlib
 - numpy
 
-Example setup:
+### Example setup:
+Create the environment:
+
+Open:
+
+* **Anaconda Prompt** (Windows)
+* **Terminal** (Mac/Linux)
+
+Then run:
 
 ```bash
-conda create -n sds210 python=3.11
+# Update conda (recommended)
+conda update -n base -c defaults conda
+
+# Navigate to the extracted repository folder
+cd <path-to-sds210-folder>
+
+# Create the environment (only once)
+conda env create -f environment.yml
+
+# Activate the environment
 conda activate sds210
 
+# Install the required libraries
 pip install rioxarray pandas matplotlib numpy
+
+# Start JupyterLab
+jupyter lab
 ```
 
 # Setup and Execution
 1. Download the Landsat raster datasets from the SDS210 course website.
 2. Store all .tif files inside the data/ folder.
 3. Open the project in JupyterLab
-4. Run the notebook XXXXXXXXXXXXXX to reproduce the analysis and figures. 
+4. Run the notebook Project3.ipnyb to reproduce the analysis and figures. 
 
 ## Data
 The raster data were provided on the course website and downloaded from the following Google Drive link:
@@ -54,5 +75,4 @@ notebooks/     # Jupyter notebooks
 figures/       # exported figures
 
 Main notebook: 
- - fgofjg
-
+ - Project3.ipynb
