@@ -67,10 +67,10 @@ jupyter lab
 The raster data were provided on the course website and downloaded from the following Google Drive link:
 https://drive.google.com/drive/folders/1SmEzlCAJJGYY-TdB58JX6ADvVxSQrMqj
 
-The datasets are stored in the respository data/ folder
+The datasets are stored locally in the data/ folder.
+And are excluded from the GitHub respository using gitignore.
 
 ## Repository Structure
-data/          # Landsat raster datasets
 notebooks/     # Jupyter notebooks
 figures/       # exported figures
 
